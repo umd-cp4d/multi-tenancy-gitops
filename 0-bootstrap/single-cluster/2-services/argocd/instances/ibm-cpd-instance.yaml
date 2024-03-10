@@ -13,7 +13,7 @@ metadata:
 spec:
   destination:
     namespace: tools
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
   project: services
   source:
     chart: ibm-cpd-platform-instance
@@ -21,14 +21,14 @@ spec:
     targetRevision: 0.1.2
     helm:
       parameters:
-      - name: metadata.name
-        value: "ibmcpd-cr"
-      - name: spec.license.accept
-        value: "true"
-      - name: spec.license.license
-        value: "Enterprise"
-      - name: spec.storageClass
-        value: "managed-nfs-storage"
+        - name: metadata.name
+          value: "ibmcpd-cr"
+        - name: spec.license.accept
+          value: "true"
+        - name: spec.license.license
+          value: "Enterprise"
+        - name: spec.storageClass
+          value: "ocs-storagecluster-cephfs"
   syncPolicy:
     automated:
       prune: true
