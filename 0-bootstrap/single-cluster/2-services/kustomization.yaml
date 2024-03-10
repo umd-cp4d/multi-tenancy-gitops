@@ -35,9 +35,9 @@ resources:
 #- argocd/instances/ibm-cp4ba-icp4acluster-postdeploy.yaml
 
 ## Cloud Pak for Data
-#- argocd/operators/ibm-cpd-scheduling-operator.yaml
+- argocd/operators/ibm-cpd-scheduling-operator.yaml
 #- argocd/instances/ibm-cpd-scheduling-instance.yaml
-#- argocd/operators/ibm-cpd-platform-operator.yaml
+- argocd/operators/ibm-cpd-platform-operator.yaml
 - argocd/instances/ibm-cpd-instance.yaml
 #- argocd/operators/ibm-cpd-ws-operator.yaml
 #- argocd/instances/ibm-cpd-ws-instance.yaml
