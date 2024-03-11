@@ -23,13 +23,13 @@ spec:
     targetRevision: 0.1.2
     helm:
       parameters:
-      - name: metadata.name
-        value: ws-cr
-      - name: spec.license.accept
-        value: "true"
-      - name: spec.license.license
-        value: Enterprise
-      - name: spec.version
-        value: 4.0.9
-      - name: spec.storageClass
-        value: managed-nfs-storage
+        - name: metadata.name
+          value: ws-cr
+        - name: spec.license.accept
+          value: "true"
+        - name: spec.license.license
+          value: Enterprise
+        - name: spec.version
+          value: 4.0.9
+        - name: spec.storageClass
+          value: ocs-storagecluster-cephfs
